@@ -45,6 +45,7 @@ export interface BaseRule {
   // eslint-disable-next-line no-use-before-define
   options: RuleOptions;
   renderable?: Object | null | void;
+  toJSON(): Object;
   toString(options?: ToCssOptions): string;
 }
 

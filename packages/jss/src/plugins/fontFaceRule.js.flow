@@ -18,6 +18,7 @@ declare export class FontFaceRule implements BaseRule {
   isProcessed: boolean;
   renderable: ?CSSFontFaceRule;
   constructor(key: string, style: JssStyle, options: RuleOptions): this;
+  toJSON(): Object;
   toString(options?: ToCssOptions): string;
 }
 

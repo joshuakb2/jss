@@ -12,6 +12,7 @@ declare export class ViewportRule implements BaseRule {
   isProcessed: boolean;
   renderable: ?CSSViewportRule;
   constructor(key: string, style: JssStyle, options: RuleOptions): this;
+  toJSON(): Object;
   toString(options?: ToCssOptions): string;
 }
 

@@ -23,6 +23,7 @@ declare export class KeyframesRule implements ContainerRule {
   isProcessed: boolean;
   renderable: ?CSSKeyframesRule;
   constructor(key: string, frames: Object, options: RuleOptions): this;
+  toJSON(): Object;
   toString(options?: ToCssOptions): string;
 }
 

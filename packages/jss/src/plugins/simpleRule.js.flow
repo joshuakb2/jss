@@ -19,6 +19,7 @@ declare export class SimpleRule implements BaseRule {
   isProcessed: boolean;
   renderable: ?CSSCharsetRule | CSSImportRule | CSSNamespaceRule;
   constructor(key: string, value: string, options: RuleOptions): this;
+  toJSON(): Object;
   toString(options?: ToCssOptions): string;
 }
 

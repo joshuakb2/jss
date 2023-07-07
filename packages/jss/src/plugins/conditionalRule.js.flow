@@ -25,6 +25,7 @@ declare export class ConditionalRule implements ContainerRule {
   indexOf(rule: Rule): number;
   addRule(name: string, style: JssStyle, options?: RuleOptions): Rule | null;
   replaceRule(name: string, style: JssStyle, options?: RuleOptions): Rule | null;
+  toJSON(): Object;
   toString(options?: ToCssOptions): string;
 }
 

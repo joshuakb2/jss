@@ -23,6 +23,8 @@ declare export class BaseStyleRule implements BaseRule {
   options: RuleOptions;
   constructor(key: string, style: JssStyle, options: RuleOptions): this;
   prop(name: string, value?: JssValue, options?: UpdateOptions): this | string;
+  toJSON(): Object;
+  toString(options?: ToCssOptions): string;
 }
 
 declare export class StyleRule extends BaseStyleRule {
@@ -32,8 +34,6 @@ declare export class StyleRule extends BaseStyleRule {
   constructor(key: string, style: JssStyle, options: RuleOptions): this;
   selector: string;
   applyTo(renderable: HTMLElementWithStyleMap): this;
-  toJSON(): Object;
-  toString(options?: ToCssOptions): string;
 }
 
 declare export default {

@@ -116,6 +116,7 @@ interface BaseRule {
   isProcessed: boolean
   // eslint-disable-next-line no-use-before-define
   options: RuleOptions
+  toJSON(): object
   toString(options?: ToCssOptions): string
 }
 
